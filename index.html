@@ -43,24 +43,26 @@
             <el-main>
                 <section v-if="showSection == 1">
                     <el-row type="flex">
-                        <el-col v-for="o in navs[currentCate]" :key="o" :span="6" style="padding: 20px">
+                        <el-col v-for="o in navs[currentCate]" :key="o" :span="6" style="padding: 20px
+                            <el-link :href="o.url" target="_blank">                                                            
                             <el-card class="box-card" :body-style="{ padding: '0px'}">
                                 <div style="padding: 14px">
-                                    <el-link :href="o.url" target="_blank">
+                                    
                                         <el-row>
                                             <el-col :span="8">
                                                 <el-avatar style="background-color: #fff;" :src="o.logo" fit="cover" shape="square"></el-avatar>
                                             </el-col>
-                                            <el-col :span="16">
+                                            <el-col>
                                                 <div class="linked-title">{{ o.name }}</div>
                                                 <div class="bottom">
                                                     <time class="time">{{ o.desc }}</time>
                                                 </div>
                                             </el-col>
                                         </el-row>
-                                    </el-link>
+                                    
                                 </div>
                             </el-card>
+                            </el-link>                                         
                         </el-col>
                     </el-row>
                 </section>
