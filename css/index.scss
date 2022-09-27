@@ -2,6 +2,15 @@
     min-width: 1024px;
 }
 
+a {
+    text-decoration: none;
+    &:hover {
+        .el-card {
+            // background-color: #efefef;
+        }
+    }
+}
+
 .el-aside {
     width: 20%;
 }
@@ -13,4 +22,10 @@
 .time {
     font-size: 10px;
     color: #999;
+}
+
+.linked {
+    .linked-title {
+        text-align: left;
+    }
 }
